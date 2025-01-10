@@ -1,41 +1,32 @@
 *{
-    margin:0px;
-    padding:0px;
-    }
-   .bg{
-    background-color: antiquewhite;
-    border: 2px solid black;
-    width:100%;
-    height:100vh;
-    padding:10px;
-    background :linear-gradient(135deg,#153677,#4e085f);
-    }
+   margin: 0;
+   padding: 0;     
+   box-sizing: border-box;  }
+body{
+   background: linear-gradient(27deg, #530b76, #25113b);
+   background-repeat: no-repeat; 
+       min-height: 100vh;
+   }
     .container{
-    font-style:Italic;
-    background-color:#d2d1ff;
-    border:3px solid black;
-    border-radius:12px;
-    width:70%;
-    height:65vh;
-    position:relative;
-    margin-left:9vh;
-    margin-top:4vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-    padding-top: 30px;
+   margin:80px auto 170px;
+   display: flex;
+   background-color: #160628;
+   padding: 4vh;
+   height: 67vh;
+   width: 25rem;
+   padding-top: 4vh;
+   flex-direction: column;
+   flex-wrap: column;
+   max-width:740px ;
+   backdrop-filter:blur(50px);
+   border-radius: 20px;
+   border-bottom: 5px solid #bc15f4;
     }
-    .main{
-    display: grid;
-    margin-bottom:19px;
-    align-items: center;
-    justify-content: center;
-    color:blanchedalmond;
-    font-size: x-large;
-    }
+    
     form{
+    margin-top:-40px;
     padding-left:7px;
+    padding-top: 7px;
     margin: 0;
     position: absolute;
     top: 30%;
@@ -45,26 +36,38 @@
     padding-bottom:13px;
     color:black ;
     }
-    h5{
+    h5,h1{
     font-size: 35px;
     justify-content: center;
+   color: #bbaf30;
+    }
+    .main{
+    display: grid;
+    margin-bottom:19px;
+    align-items: center;
+    justify-content: center;
+    color:blanchedalmond;
+    font-size: x-large;
     }
     #qrText{
      padding-left:7px;
      color:black;
      height: 45px;
      font-size: 30px;
+     margin-bottom: 20px;
      }
     .button{
     float:right;
     margin:auto;
     background-color:red;
-    color:white;
+   color: #e4d20f;
+
+    /* color:white; */
     padding:10px;
     border:none;
     border-radius:16px;
     text-align:center;
-    font-size:11px;
+    font-size:13px;
     font-style:Italic;
     font-weight:bold;
     margin-top:14px;
@@ -80,23 +83,5 @@
    }
    #imgBox.show-img {
    max-width: 210px;
-   border: 2px solid #d1d1d1;
    margin-top: 10px;
    }
-   @media (max-width:556px) {
-     .container{
-        padding-top: 20px;
-     }
-     .button{
-        margin-top: 3px;
-        margin-bottom: 5px;
-     }
-     #qrText{
-        height: 30px;
-        width: 90%;
-        font-size: 27px;
-     }
-     h5{
-        font-size: 23px;
-     }
-   }   
